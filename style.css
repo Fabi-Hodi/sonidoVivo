@@ -1,6 +1,65 @@
+body {
+    background-color: #1C1510;
+    color: #F5EDE0;
+}
 
 
 
+header {
+    background: #2B1D14;
+    color: white;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header h1 {
+    font-size: 1.70rem;
+}
+
+header nav {
+    display: flex;
+    gap: 16px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.60rem;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-titulo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.producto {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    text-align: center;
+}
+
+.producto img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/*-----------------------------------------------------------------------------------*/
 
 .banner{
     display: flex;
