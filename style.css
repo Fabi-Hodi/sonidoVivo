@@ -1,11 +1,11 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
 body {
-    background-color: #1C1510;
+    background-color: #0c0500;
     color: #F5EDE0;
 }
 
-
-
-header {
+ header {
     background: #2B1D14;
     color: white;
     padding: 8px 16px;
@@ -16,9 +16,6 @@ header {
     gap: 10px;
 }
 
-header h1 {
-    font-size: 1.70rem;
-}
 
 header nav {
     display: flex;
@@ -28,7 +25,7 @@ header nav {
 header nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.60rem;
+    font-size: 1.20rem;
 }
 
 .logo-titulo {
@@ -43,51 +40,22 @@ header nav a {
     border-radius: 50%;
     object-fit: cover;
 }
-
-.grilla-productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 24px 0;
-}
-
-.producto {
-    background: #4a2e1f;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 16px;
-    text-align: center;
-}
-
-.producto img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    border-radius: 6px;
-}
-
-footer {
-    background: #2B1D14;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    margin-top: 40px; 
-}
+/* HEADER------------------------------------------------------ */
 
 
-/*-----------------------------------------------------------------------------------*/
-
+/* banner---------------------------------------------------- */
 .banner{
     display: flex;
     background-image: url('img/fondoBanner.png');
     background-size: cover;
-    height: 400px;
+    height: 550px;
 
-    align-items: center;
-     
+    align-items: center;  
 }
 
-
+h1{
+    font-size: 70px;
+}
 
 .text-banner{
     color: white;
@@ -100,3 +68,95 @@ footer {
     margin: 500px;
     background-color: black;
 }
+/* BANNER---------------------------------------------------- */
+
+/* CATEGORIAS---------------------------------------------------- */
+#section-categoria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.categoria-guitarra{
+    background-image: url(img/guitarra.png);
+    background-size: cover;
+}
+.categoria-guitarraEle{
+    background-image: url(img/guitarraElectrica.png);
+    background-size: cover;
+}
+.categoria-bajo{
+    background-image: url(img/bajo.png);
+    background-size: cover;
+}
+.categoria-bateria{
+    background-image: url(img/bateria.png);
+    background-size: cover;
+}
+.categoria-piano{
+    background-image: url(img/piano.png);
+    background-size: cover;
+}
+.categoria-microfono{
+    background-image: url(img/microfono.png);
+    background-size: cover;
+}
+.categoria-estudioGrabacion{
+    background-image: url(img/estudioGrabacion.png);
+    background-size: cover;
+}
+.categoria-accesorios{
+    background-image: url(img/accesorios.png);
+    background-size: cover;
+}
+.categoria-amplificador{
+    background-image: url(img/amplificador.png);
+    background-size: cover;
+}
+.categoria-pedalesEfectos{
+    background-image: url(img/pedalesEfecto.png);
+    background-size: cover;
+}
+
+.categoria-guitarra ,
+.categoria-guitarraEle,
+.categoria-bajo,
+.categoria-bateria,
+.categoria-piano,
+.categoria-microfono,
+.categoria-estudioGrabacion,
+.categoria-accesorios,
+.categoria-amplificador,
+.categoria-pedalesEfectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    padding: 10px 0px 10px 0px;
+    align-items: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+p{
+    margin: 5px;
+}
+/* CATEGORIAS---------------------------------------------------- */
+
+
+
+footer {
+    background: #2B1D14;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    margin-top: 40px; 
+} 
+
+
+/*-----------------------------------------------------------------------------------*/
+
