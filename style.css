@@ -5,6 +5,7 @@ body {
     color: #F5EDE0;
 }
 
+/* HEADER------------------------------------------------------ */
  header {
     background: #2B1D14;
     color: white;
@@ -71,6 +72,9 @@ h1{
 /* BANNER---------------------------------------------------- */
 
 /* CATEGORIAS---------------------------------------------------- */
+.h2-categoria{
+    text-align: center;
+}
 #section-categoria{
     display: flex;
     flex-direction: row;
@@ -140,10 +144,23 @@ h1{
     align-items: center;
     margin: 10px;
     border-radius: 10px;
+
+    transition: transform 0.3s ease;
+}
+
+#section-categoria div:hover {
+    transform: scale(1.1); 
 }
 
 p{
     margin: 5px;
+    
+    font-weight: bold;
+}
+
+.enlace-categoria{
+    color: #edb040;
+    font-weight: bold;
 }
 /* CATEGORIAS---------------------------------------------------- */
 
@@ -159,4 +176,69 @@ footer {
 
 
 /*-----------------------------------------------------------------------------------*/
+
+
+/* CATALOGOS --------------------------------------------------------------------*/
+.seccion-guitarras{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.guitarra{
+    background-color: #2B1D14;
+    display: flex;
+    border: 1px solid #edb040;
+    width: 250px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px 0px 10px 0px;
+
+    flex-direction: column;
+    align-items: center;
+  
+    transition: transform 0.3s ease;
+}
+
+    
+
+
+.seccion-guitarras div:hover {
+    transform: scale(1.1); 
+}
+
+.product{
+    width: 150px;
+    height: 350px;
+}
+
+.h1-catalogos{
+    padding: 10px 10px 10px 55px;
+}
+/* CATALOGOS --------------------------------------------------------------------*/
+
+
+
+
+.separador{
+    width: 100%;
+    height: 2px;    
+    border: none;
+    background-color: #edb040;
+    margin: auto;
+    background: linear-gradient(to right, transparent, #edb040, transparent);
+    margin: 30px auto; 
+    
+}
+
+@media (max-width: 600px) {
+    .panes, .pastel, .banner {
+        width: 250px; 
+        max-width: 350px; 
+    }
+}
+
+
 
