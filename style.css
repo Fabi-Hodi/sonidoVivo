@@ -213,12 +213,16 @@ footer {
 }
 
 
-/*---------------Bateria-----------------*/
-.product_ba{
-    width: 250px;
-    height: 380px;
+
+
+/*-----------------Piano------------*/
+.product_pia {
+    width: 260px;   /* más ancho, se ve balanceado */
+    height: auto;   /* se adapta al contenido */
+    aspect-ratio: 3 / 4; /* mantiene proporción elegante */
 }
-/*---------------Bateria-----------------*/
+
+/*-----------------Piano------------*/
 
 
 .h1-catalogos{
