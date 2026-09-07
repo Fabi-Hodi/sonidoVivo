@@ -250,6 +250,53 @@ footer a{
 /* CATALOGOS --------------------------------------------------------------------*/
 
 
+/* GUITARRA1 --------------------------------------------------------------------*/
+.producto-precio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+
+    gap: 10px;
+    width: 90%;
+
+}
+
+.producto-imagen{ 
+    display: flex;
+    border:1px solid #edb040;
+    border-radius: 10px;
+    width: 50%;
+    height: 600px;
+    
+    
+}
+
+.producto-imagen img{
+    margin: auto;
+    width: 200px;
+    height: 500px;
+    
+    
+}
+
+.precio-producto{
+    border: 1px solid #edb040;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.producto-descripcion{
+    border: 1px solid #edb040;
+    border-radius: 10px;
+    padding: 20px;
+    width: 82%;
+    margin: auto;
+}
+/* GUITARRA1 --------------------------------------------------------------------*/
+
+
 
 
 .separador{
