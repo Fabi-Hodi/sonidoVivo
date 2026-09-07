@@ -24,9 +24,11 @@ header nav {
 }
 
 header nav a, div a{
+    display: flex;
     color: white;
     text-decoration: none;
     font-size: 1.20rem;
+    align-items: center;
 }
 
 
@@ -41,6 +43,10 @@ header nav a, div a{
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+nav a img{
+    width: 40px;
 }
 /* HEADER------------------------------------------------------ */
 
