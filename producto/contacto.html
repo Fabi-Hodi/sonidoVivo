@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Contacto</title>
+</head>
+<body>
+
+     <header>
+        <div class="logo-titulo">
+            <a href="../index.html">
+            <img src="../img/logo.png" alt="Logo de Tu sonido, tu mundo">
+            </a>
+            <a href="../index.html">
+            <p>Sonido Vivo</p>
+            </a>
+        </div>
+        <nav>
+            <a href="../index.html" >Inicio</a>
+            <a href="#section-categoria">Categoría</a>
+            <a href="">
+                <img src="../img/carrito.png" alt="">
+            </a>
+        </nav>
+    </header>
+
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <form id="form-contacto" novalidate>
+        <label for="nombre">Nombre completo</label>
+        <input type="text" id="nombre" required>
+
+        <label for="correo">Correo electrónico</label>
+        <input type="email" id="correo" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono">
+
+        <label for="motivo">Motivo de la consulta</label>
+        <select id="motivo" required>
+          <option value="">Selecciona una opción</option>
+          <option>Rembolso</option>
+          <option>Reclamo</option>
+          <option>Problema de pagina</option>
+          <option>Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" required></textarea>
+
+        <button type="submit">Enviar consulta</button>
+        <p id="mensaje-confirmacion"></p>
+      </form>
+    </section>
+  </main>
+
+
+    <footer>
+        <a href="">Contáctanos</a>
+        <p>© 2026 Sonido Vivo </p>
+        <a href="#" class="logo-titulo">Volver Arriba</a>
+    </footer>
+</body>
+</html>

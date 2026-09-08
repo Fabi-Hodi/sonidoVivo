@@ -257,49 +257,57 @@ footer a{
 
 
 /* GUITARRA1 --------------------------------------------------------------------*/
-.producto-precio{
+.producto-precio {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: auto;
-
-    gap: 10px;
+    gap: 20px;
     width: 90%;
-
+    font-size: 22px;
+    margin: auto;
 }
 
-.producto-imagen{ 
+.producto-imagen {
     display: flex;
-    border:1px solid #edb040;
+    border: 1px solid #edb040;
     border-radius: 10px;
     width: 50%;
     height: 600px;
-    
-    
 }
 
-.producto-imagen img{
+.producto-imagen img {
     margin: auto;
     width: 200px;
     height: 500px;
-    
-    
 }
 
-.precio-producto{
+.precio-producto {
     border: 1px solid #edb040;
     border-radius: 10px;
     width: 40%;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-.producto-descripcion{
+.precio-producto ul {
+    padding-left: 20px;
+}
+
+.precio-producto button {
+    margin-top: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+.producto-descripcion {
     border: 1px solid #edb040;
     border-radius: 10px;
     padding: 20px;
     width: 82%;
     margin: auto;
 }
+
 /* GUITARRA1 --------------------------------------------------------------------*/
 
 
@@ -325,3 +333,95 @@ footer a{
 
 
 
+
+
+
+/* === Contacto === */
+#contacto {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contacto h2 {
+  color: #edb040;
+  margin-bottom: 15px;
+}
+
+form {
+  background: #2B1D14;
+  border: 1px solid #edb040;
+  border-radius: 6px;
+  padding: 24px;
+  max-width: 420px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #F5EDE0;
+  margin: 14px 0 6px;
+}
+
+label:first-of-type {
+  margin-top: 0;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #edb040;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background-color: #0c0500;
+  color: #F5EDE0;
+}
+
+textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+
+
+button {
+  margin-top: 20px;
+  background: #edb040;
+  color: #0c0500;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f5ede0;
+}
+
+
+/* === Pie de página === */
+footer {
+  background: #2B1D14;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  margin-top: 40px;
+}
+
+/* === Responsivo === */
+@media (max-width: 600px) {
+  .grilla-productos {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
