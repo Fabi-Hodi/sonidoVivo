@@ -425,3 +425,16 @@ footer {
     align-items: flex-start;
   }
 }
+
+
+
+/*----------------------------------*/
+.campo-error {
+    border: 2px solid red;
+}
+
+#mensaje-confirmacion {
+    color: #edb040;
+    text-align: center;
+    margin-top: 15px;
+}
