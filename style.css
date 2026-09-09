@@ -324,6 +324,10 @@ footer a{
     
 }
 
+.h1-guitarra{
+    padding: 20px 20px 20px 120px;
+}
+
 @media (max-width: 600px) {
     .panes, .pastel, .banner {
         width: 250px; 
