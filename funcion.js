@@ -7,8 +7,6 @@ formulario.addEventListener('submit',function(e){
     e.preventDefault()
 
     const correo = document.querySelector('#correo')
-    const telefono = document.querySelector('#telefono')
-
 
     let formularioValido = true;
 
