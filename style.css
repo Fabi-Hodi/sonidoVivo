@@ -264,6 +264,7 @@ footer a{
     width: 90%;
     font-size: 22px;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 .producto-imagen {
@@ -271,23 +272,25 @@ footer a{
     border: 1px solid #edb040;
     border-radius: 10px;
     width: 50%;
-    height: 600px;
+    min-height: 600px;
 }
 
 .producto-imagen img {
     margin: auto;
     width: 200px;
     height: 500px;
+    object-fit: contain;
 }
 
 .precio-producto {
     border: 1px solid #edb040;
     border-radius: 10px;
     width: 40%;
-    height: 600px;
-    padding: 10px;
+    min-height: 600px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+
 }
 
 .precio-producto ul {
@@ -311,8 +314,6 @@ footer a{
 /* GUITARRA1 --------------------------------------------------------------------*/
 
 
-
-
 .separador{
     width: 100%;
     height: 2px;    
@@ -328,17 +329,35 @@ footer a{
     padding: 20px 20px 20px 120px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 360px) {
     .panes, .pastel, .banner {
         width: 250px; 
-        max-width: 350px; 
+        max-width: 350px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .banner{
+    
+        background-position: right center; 
+    }
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 40px;
+        line-height: 1.1;
     }
 }
 
 
-
-
-
+@media (max-width: 900px) {
+    .producto-imagen, .precio-producto, .producto-descripcion {
+        width: 100%;
+        min-height: auto;
+    }
+}
 
 /* === Contacto === */
 #contacto {
